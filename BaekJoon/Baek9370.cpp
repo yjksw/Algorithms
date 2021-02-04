@@ -48,34 +48,97 @@ int main() {
         }
 
         vector<int> candidate;
+        vector<vector<int> > candidateShortestPath(t, vector<int>(2, 0));
         for (int i = 0; i < t; i++) {
             int x = 0;
             scanf("%d", &x);
             candidate.push_back(x);
         }
 
-        priority_queue<pair<int, int>, vector<pair<int, int> >, compare> pq;
-        pair<int, int> p;
-        p.first = s;
-        p.second = 0;
-        pq.push(p);
-
         vector<int> distance(n+1);
+        fill_n(distance.begin(), n + 1, INT_MAX);
         distance[s] = 0;
 
-        int route1 = 0;
-        int route2 = 0;
+        vector<int> candidatePath(t, 0);
 
         for (int i = 0; i < 3; i++) {
+            if (i == 0) {
+                priority_queue<pair<int, int>, vector<pair<int, int> >, compare> pq;
+                pair<int, int> p;
+                p.first = s;
+                p.second = 0;
+                pq.push(p);
+            }
+
+            if (i == 1) {
+                fill_n(distance.begin(), n + 1, INT_MAX);
+                priority_queue<pair<int, int>, vector<pair<int, int> >, compare> pq;
+                pair<int, int> p;
+                p.first = g;
+                p.second = 0;
+                pq.push(p);
+                distance[g] = 0;
+            }
+
+            if (i == 2) {
+                fill_n(distance.begin(), n + 1, INT_MAX);
+                priority_queue<pair<int, int>, vector<pair<int, int> >, compare> pq;
+                pair<int, int> p;
+                p.first = h;
+                p.second = 0;
+                pq.push(p);
+                distance[h] = 0;
+            }
+
             while (!pq.empty()) {
                 int v = pq.top().first;
-                int w = p
+                int w = pq.top().second;
+                pq.pop();
 
+                if (distance[v] < w) {
+                    continue;
+                }
+
+                distance[v] = w;
+                for (int i = 0; i < graph[v].size(); i++) {
+                    int ver = graph[v][i].first;
+                    int wei = graph[v][i].second;
+
+                    if (distance[ver] > distance[v] + wei) {
+                        distance[ver]= distance[v] + wei;
+                        pair<int, int> p;
+                        p.first = ver;
+                        p.second = distance[ver];
+                        pq.push(p);
+                    }
+                }
+            }
+
+            if (i == 0) {
+                for (int i = 0; i < candidate.size(); i++) {
+                    candidateShortestPath[i] = distance[candidate[i]];
+                    candidatePath[i][0] += distance[g];
+                    candidatePath[i][1] += distance[h];
+                }
+            }
+
+            if (i == 1) {
+                for (int i = 0; i < candidate.size(); i++) {
+                    candidatePath[i][0] += distance[h];
+                    candidatePath[i][1] += distance[g];
+                }
+            }
+
+            if (i == 1) {
+                for (int i = 0; i < candidate.size(); i++) {
+                    candidatePath[i][0] += distance[candidate[i]];
+                    candidatePath[i][1] += distance[candidate[i]];
+                }
             }
         }
 
-
         //목적지 목록 출력
+        
         testcase--;
     }
 
