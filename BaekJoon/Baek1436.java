@@ -1,24 +1,26 @@
 import java.util.Scanner;
 
-class Main{
-	public static void main(String[] args){
+class Main {
 
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
+    public static void main(String[] args) {
 
-		int check = 0;
-		int num = 666;
-		int result = 0;
-		while(true){
-			if(String.valueOf(num).contains("666")){
-				check++;
-			}
-			if(check==n)
-				break;
-			num++;
-		}
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
 
-		System.out.println(num);
-	}
+        int check = 0;
+        int num = 666;
+        int result = 0;
+        while (true) {
+            if (String.valueOf(num).contains("666")) {
+                check++;
+            }
+            if (check == n) {
+                break;
+            }
+            num++;
+        }
+
+        System.out.println(num);
+    }
 }
 
