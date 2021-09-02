@@ -1,9 +1,11 @@
+package kakao2019;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-class Main {
+class OpenChatting {
 	public static void main(String[] args) {
         
         String[] record = {"Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"};
