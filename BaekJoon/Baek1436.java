@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main {
+class Baek1436 {
 
     public static void main(String[] args) {
 

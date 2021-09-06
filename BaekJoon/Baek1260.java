@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Stack;
 import java.util.Arrays;
 
-class Main {
+class Baek1260 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

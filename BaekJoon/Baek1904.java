@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-class Main {
+class Baek1904 {
 
     static int n;
     static int[] count;

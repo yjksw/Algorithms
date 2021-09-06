@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
-class Main {
+class Baek1629 {
 
     static int[] num = new int[3];
 

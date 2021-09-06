@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-class Main {
+class Baek1149 {
 
     static int n;
 

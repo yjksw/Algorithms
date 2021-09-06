@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-class Main {
+class Baek1463 {
 
     static int[] memo;
 

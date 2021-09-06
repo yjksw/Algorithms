@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Stack;
 import java.util.ArrayList;
 
-class Main {
+class Baek1874 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

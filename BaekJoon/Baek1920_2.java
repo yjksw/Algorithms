@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 import java.util.Arrays;
 
-class Main {
+class Baek1920_2 {
 
     static int n;
     static int m;
