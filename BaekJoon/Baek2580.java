@@ -3,7 +3,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-class Main {
+class Baek2580 {
 
     static int[][] board = new int[9][9];
     static boolean fin = false;

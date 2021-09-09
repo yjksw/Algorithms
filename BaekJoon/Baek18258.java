@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.LinkedList;
 import java.util.Deque;
 
-class Main {
+class Baek18258 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

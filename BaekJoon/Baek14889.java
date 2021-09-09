@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Stack;
 import java.util.Iterator;
 
-class Main {
+class Baek14889 {
 
     static int[][] power;
     static Stack<Integer> team = new Stack<>();

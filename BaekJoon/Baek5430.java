@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 import java.util.Deque;
 import java.util.LinkedList;
 
-class Main {
+class Baek5430 {
 
     static boolean r = false;
     static boolean error = false;

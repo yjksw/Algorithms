@@ -3,7 +3,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-class Main {
+class Baek11053 {
 
     public static void main(String[] args) {
 

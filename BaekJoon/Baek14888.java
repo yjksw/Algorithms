@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-class Main {
+class Baek14888 {
 
     static int[] num;
     static int[] oper = new int[4];

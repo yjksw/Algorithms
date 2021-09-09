@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.io.*;
 import java.util.StringTokenizer;
 
-class Main {
+class Baek15651 {
 
     public static Stack<Integer> st = new Stack<>();
     public static int cnt = 0;

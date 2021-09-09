@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-class Main {
+class Baek2748 {
 
     static int n;
     static long[] fibo;

@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.StringTokenizer;
 
-class FriendsBlock {
+class Baek6549 {
 
     static int n;
     static long[] value;

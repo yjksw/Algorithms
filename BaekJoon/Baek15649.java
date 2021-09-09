@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Stack;
 import java.util.Iterator;
 
-class Main {
+class Baek15649 {
 
     public static Stack<Integer> st = new Stack<>();
     public static int cnt = 0;

@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 import java.util.Arrays;
 import java.util.Collections;
 
-class Main {
+class Baek2261 {
 
     static Point[] value;
 

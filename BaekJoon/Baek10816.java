@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.StringTokenizer;
 import java.util.Arrays;
 
-class Main {
+class Baek10816 {
 
     static int[] num_list;
 

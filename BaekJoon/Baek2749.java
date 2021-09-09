@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-class Main {
+class Baek2749 {
 
     static long n;
     static long[] arr;

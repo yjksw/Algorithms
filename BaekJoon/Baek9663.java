@@ -5,7 +5,7 @@ import java.io.*;
 //import java.util.Stack;
 //import java.util.StringTokenizer;
 
-class Main {
+class Baek9663 {
 
     static int result;
     static int n;

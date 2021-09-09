@@ -3,7 +3,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-class Main {
+class Baek10830 {
 
     static long[][] a;
     static long[][] ans;

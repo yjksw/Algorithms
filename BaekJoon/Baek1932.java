@@ -3,7 +3,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-class Main {
+class Baek1932 {
 
     static int[][] value;
     static int[][] result;
